@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ForgotPasswordWindow</class>
+ <widget class="QWidget" name="ForgotPasswordWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>444</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quên mật khẩu</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+            QPushButton {
+                background-color: #4A90E2;
+                color: #FFFFFF;
+                font-weight: bold;
+                border: 1px solid #357ABD;
+                border-radius: 5px;
+            }
+            QPushButton:hover {
+                background-color: #357ABD;
+                color: #FFFFFF;
+                border: 2px solid #4A90E2;
+            }
+            QLabel#titleLabel {
+                font-size: 20px;
+                font-weight: bold;
+                color: #357ABD;
+            }
+            QWidget {
+                background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E1F5FE, stop:1 #B3E5FC);
+                color: #333333;
+                font-weight: bold;
+            }
+            QLineEdit {
+                background-color: #FFFFFF;
+                color: #333333;
+                border: 1px solid #B0B0B0;
+                border-radius: 3px;
+                padding: 2px;
+            }
+            QComboBox {
+                background-color: #FFFFFF;
+                color: #333333;
+                border: 1px solid #B0B0B0;
+                border-radius: 3px;
+                padding: 2px;
+            }
+            QGroupBox {
+                font-weight: bold;
+                color: #357ABD;
+            }
+            QTableWidget {
+                background-color: #FFFFFF;
+                color: #333333;
+                border: 1px solid #B0B0B0;
+            }
+            QTableWidget::item:selected {
+                background-color: #4A90E2;
+                color: #FFFFFF;
+            }
+   </string>
+  </property>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>451</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E1F5FE, stop:1 #B3E5FC);}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="titleLabel">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>30</y>
+     <width>250</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quên mật khẩu</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="usernameLabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tên đăng nhập:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="usernameInput">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>100</y>
+     <width>220</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="emailLabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>150</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Email:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="emailInput">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>150</y>
+     <width>220</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendOtpButton">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>190</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Gửi OTP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="otpLabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>230</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mã OTP:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="otpInput">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>230</y>
+     <width>220</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="newPasswordLabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>280</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mật khẩu mới:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="newPasswordInput">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>280</y>
+     <width>220</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="showPasswordCheckbox">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>320</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hiển thị mật khẩu</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="resetPasswordButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>350</y>
+     <width>120</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Đặt lại mật khẩu</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginButton">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>350</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Đăng nhập</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

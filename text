@@ -1,0 +1,15 @@
+pyuic6 -x DangNhap.ui -o DangNhap.py
+pyuic6 -x QuenMK.ui -o QueMK.py
+pyuic6 -x Main.ui -o Main.py
+
+pyuic6 -x caulacbo.ui -o caulacbo.py
+pyuic6 -x dangkilop.ui -o dangkilop.py
+pyuic6 -x hoadon.ui -o hoadon.py
+pyuic6 -x huanluyenvien.ui -o huanluyenvien.py
+pyuic6 -x loptap.ui -o loptap.py
+pyuic6 -x taikhoan.ui -o taikhoan.py
+pyuic6 -x thanhvien.ui -o thanhvien.py
+pyuic6 -x thongke.ui -o thongke.py
+pyuic6 -x thongke_ui.ui -o thongke_ui.py
+
+
